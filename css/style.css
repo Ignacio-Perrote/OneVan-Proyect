@@ -421,6 +421,10 @@ ul li {
     padding: 10px 25px;
 }
 
+.card_content button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
 /*Contenedor sobre nosotros-mapa*/
 .map_container {
