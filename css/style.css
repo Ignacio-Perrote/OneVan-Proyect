@@ -45,8 +45,9 @@ button {
 
 .header {
     position: fixed;
-    backdrop-filter: blur(40px);
+    background-color: #302f2fde;
     width: 100%;
+    top: 0;
 }
 
 .header_container {
@@ -74,7 +75,7 @@ ul li {
 
 .underline {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.7em;
     color: #ffffff;
     font-weight: 400;  
     display: inline-block;
@@ -89,14 +90,14 @@ ul li {
     bottom: -2px;
     left: 0;
     background-color: #ffffff;
-    transform: scale(0);
-    transition: 0.3s ease-in-out;
-    transform-origin: right;
+    transform: scalex(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom right;
 }
 
 .underline:hover::after {
-    transform: scale(1);
-    transform-origin: left;
+    transform: scalex(1);
+    transform-origin: bottom left;
 }
 
 /*MEDIA QUERIAS HEADER*/
@@ -131,7 +132,7 @@ ul li {
     .hamburger-icon {
         width: 100%;
         height: 1px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         display: block;
         position: absolute;
         top: 50%;
@@ -145,7 +146,7 @@ ul li {
         top: 2px;
         height: 1px;
         width: 100%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         transition: transform 0.45s ease-in-out, top 0.25s ease-in-out;
 
     }
@@ -156,7 +157,7 @@ ul li {
         bottom: 2px;
         height: 1px;
         width: 100%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         transition: transform 0.45s ease-in-out, bottom 0.25s ease-in-out;
 
     }
@@ -235,7 +236,7 @@ ul li {
     margin-left: 20px;
 }
 /*MEDIA QUERIES HERO CONTAINER*/
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     
     .start_date {
         border-radius: 4px 0px 0px 4px;
@@ -309,7 +310,7 @@ ul li {
 
 /*Contenedor Autocaravanas encabezado*/
 .main_container {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .box-section_header {
@@ -321,17 +322,19 @@ ul li {
 }
 
 .section_header {
-    line-height: 40px; 
+    line-height: 40px;
+    margin-bottom: 20px;
+      
 }
 
 .section_header h2 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 3em;
 }
 
 .section_header h3 {
     font-weight: 300;
-    font-size: 17px;
+    font-size: 1.8em;
 
 }
 
@@ -339,16 +342,15 @@ ul li {
 /*Contenedor Autocaravanas tarjetas-opciones*/
 .card_container {
     display: grid;
-    grid-template-columns: repeat(2, 23vw);
+    grid-template-columns: repeat(3, 22.5vw);
     grid-template-rows: repeat(2, 450px);
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 1vw;
 }
 
 .card {
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 2px 2px 2px 2px;
     overflow: hidden;
-    margin: 10px 0px 10px 0px;
     flex-direction: column;
     display: flex;
     border: 1px solid rgb(219, 215, 215)
@@ -404,7 +406,7 @@ ul li {
 
 /*Contenedor sobre nosotros-mapa*/
 .map_container {
-    margin: 10px 0px
+    margin: 100px 0px
 
 }
 
@@ -422,7 +424,7 @@ ul li {
 
 .card_nosotros {
     background: linear-gradient(#086966, #f6aa55);
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
     display: flex;
 }
