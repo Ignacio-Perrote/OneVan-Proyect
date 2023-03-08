@@ -1,0 +1,39 @@
+/*FOOTER*/
+
+.footer {
+    margin: 2px 0px 25px 0px;
+
+    h4 {
+        padding: 20px 20px 0px 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 14px;
+        padding: 1px;
+        line-height: 20px;
+    }
+}
+
+.box-footer_container {
+    width: 70%;
+    margin: auto;
+}
+
+.box-flex_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content_container {
+    width: 70%;
+    padding: 25px 0 0;
+}
+
+.footer__content {
+    text-align: center;
+    display: flex;
+}

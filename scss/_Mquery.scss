@@ -1,0 +1,271 @@
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+    .header_container {
+        width: 80%;
+    }
+
+    .header__nav {
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hamburger-icon-container {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            >.hamburger-icon {
+                opacity: 0;
+            }
+
+            &::after {
+                transform: rotate(320deg);
+                top: 12px;
+            }
+
+            &::before {
+                transform: rotate(-140deg);
+                bottom: 11px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            height: 1px;
+            width: 100%;
+            background-color: $background-color_1;
+            transition: transform 0.45s ease-in-out, top 0.25s ease-in-out;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            height: 1px;
+            width: 100%;
+            background-color: $background-color_1;
+            transition: transform 0.45s ease-in-out, bottom 0.25s ease-in-out;
+        }
+    }
+
+    .hamburger-icon {
+        width: 100%;
+        height: 1px;
+        background-color: $background-color_1;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transition: opacity 0.14s ease-in-out;
+        opacity: 1;
+    }
+
+    .onevan_image {
+        background-size: 100%;
+        background-position: top;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .box_container {
+        width: 80%;
+    }
+
+    .box_flex {
+        width: 100%;
+    }
+
+    .hero_content {
+        line-height: 3.5em;
+        margin-top: 25px;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            font-weight: 300;
+            line-height: 1.5em;
+            margin-top: 10px;
+        }
+    }
+
+    .search_bar {
+        display: block;
+
+        form {
+            display: block;
+            font-size: 1.4em;
+        }
+
+        button {
+            margin-top: 10px;
+            width: -webkit-fill-available;
+            margin-left: 0px;
+        }
+    }
+
+    .start_date {
+        max-width: 100%;
+        border-radius: 4px 4px 0px 0px;
+        border-bottom: none;
+    }
+
+    .end_date {
+        max-width: 100%;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .box-section_header {
+        width: 80%;
+    }
+
+    .section_header {
+        line-height: 30px;
+
+        h2 {
+            font-size: 2.4em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+        }
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .box-map_container {
+        height: 700px;
+        width: 80%;
+    }
+
+    .box-flex_map {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card_nosotros {
+        display: block;
+        height: 100%;
+    }
+
+    .map_content {
+        width: 100%;
+        height: 50%;
+        margin: 0px;
+        padding: 20px;
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .card_map {
+        width: 100%;
+        height: 50%;
+    }
+
+    .box-blog_container {
+        width: 90%;
+    }
+
+    .blog_heading {
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    .blog_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog_text {
+        width: 100%;
+    }
+
+    figure {
+        width: 100%;
+        padding-bottom: 20px;
+
+        img {
+            border-radius: 10px 0px;
+        }
+    }
+
+    .footer {
+        margin-top: 25px;
+
+        h4 {
+            padding: 10px 0px 10px 0px;
+            font-weight: 600;
+            font-size: 1.7em;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.3em;
+            padding: 1px;
+            line-height: 20px;
+        }
+    }
+
+    .box-footer_container {
+        width: 80%;
+        width: 100%;
+    }
+
+    .footer-content_container {
+        width: 80%;
+    }
+
+    .box-flex_footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .start_date {
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    .end_date {
+        border-radius: 0px 4px 4px 0px;
+        border-left: none;
+    }
+}
