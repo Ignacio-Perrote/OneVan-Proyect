@@ -1,7 +1,7 @@
 /*FOOTER*/
 
 .footer {
-    margin: 2px 0px 25px 0px;
+    margin: 2px 0px 5px 0px;
 
     h4 {
         padding: 20px 20px 0px 20px;
@@ -24,7 +24,6 @@
 
 .box-flex_footer {
     display: flex;
-    align-items: center;
 }
 
 .footer-content_container {
@@ -34,4 +33,9 @@
 .footer__content {
     text-align: center;
     display: flex;
+
+    div {
+        padding-left: 60px;
+    }
+
 }

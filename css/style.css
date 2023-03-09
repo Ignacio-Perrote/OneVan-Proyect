@@ -407,7 +407,7 @@ figure img {
 /*usar animacion filter: grayscale*/
 /*FOOTER*/
 .footer {
-  margin: 2px 0px 25px 0px;
+  margin: 2px 0px 5px 0px;
 }
 .footer h4 {
   padding: 20px 20px 0px 20px;
@@ -428,7 +428,6 @@ figure img {
 
 .box-flex_footer {
   display: flex;
-  align-items: center;
 }
 
 .footer-content_container {
@@ -438,6 +437,9 @@ figure img {
 .footer__content {
   text-align: center;
   display: flex;
+}
+.footer__content div {
+  padding-left: 60px;
 }
 
 /*MEDIA QUERIES*/
