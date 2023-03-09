@@ -404,6 +404,7 @@ figure img {
   border-radius: 10px;
 }
 
+/*usar animacion filter: grayscale*/
 /*FOOTER*/
 .footer {
   margin: 2px 0px 25px 0px;
@@ -428,12 +429,10 @@ figure img {
 .box-flex_footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .footer-content_container {
   width: 70%;
-  padding: 25px 0 0;
 }
 
 .footer__content {
