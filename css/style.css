@@ -430,10 +430,6 @@ figure img {
   display: flex;
 }
 
-.footer-content_container {
-  width: 70%;
-}
-
 .footer__content {
   text-align: center;
   display: flex;
