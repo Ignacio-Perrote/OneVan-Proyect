@@ -8,6 +8,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  padding-bottom: 20em;
+  min-height: 100vh;
 }
 
 h1 {
@@ -170,7 +173,7 @@ ul li {
 
 /*AUTOCARAVANAS*/
 .main_container {
-  margin-top: 100px;
+  margin: 60px 0px;
 }
 
 .box-section_header {
@@ -184,6 +187,7 @@ ul li {
 .section_header {
   line-height: 40px;
   margin-bottom: 20px;
+  margin-top: 70px;
 }
 .section_header h2 {
   font-weight: bold;
@@ -257,8 +261,13 @@ ul li {
 }
 
 /*CONTACTO*/
+.contacto {
+  display: flex;
+  height: 100vh;
+}
+
 .map_container {
-  margin: 80px 0px 50px;
+  margin: auto;
 }
 
 .box-map_container {
@@ -408,6 +417,9 @@ figure img {
 /*FOOTER*/
 .footer {
   margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer h4 {
   padding: 20px 20px 0px 20px;
