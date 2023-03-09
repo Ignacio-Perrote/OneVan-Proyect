@@ -258,7 +258,7 @@ ul li {
 
 /*CONTACTO*/
 .map_container {
-  margin: 100px 0px;
+  margin: 40px 0px;
 }
 
 .box-map_container {
@@ -407,7 +407,7 @@ figure img {
 /*usar animacion filter: grayscale*/
 /*FOOTER*/
 .footer {
-  margin: 2px 0px 5px 0px;
+  margin: 2px 0px 20px 0px;
 }
 .footer h4 {
   padding: 20px 20px 0px 20px;
@@ -626,19 +626,23 @@ figure img {
     line-height: 20px;
   }
   .box-footer_container {
-    width: 80%;
     width: 100%;
   }
   .footer-content_container {
     width: 80%;
+    margin-top: 10px;
   }
   .box-flex_footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .footer__content {
     display: flex;
     flex-direction: column;
+  }
+  .footer__content div {
+    padding: 0;
   }
 }
 @media screen and (min-width: 1025px) {
