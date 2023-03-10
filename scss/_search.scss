@@ -1,5 +1,19 @@
 /*INICIO*/
 
+@mixin date-style {
+    border: solid 1px grey;
+    max-width: 17vw;
+    height: 7vh;
+    padding: 1em;
+    background-color: $background-color_6;
+}
+
+@mixin box-model {
+    display: flex;
+    flex-direction: column;
+} 
+
+
 .onevan_image {
     background-image: url(../img/fondocaravana.jpg);
     height: 100vh;
@@ -15,8 +29,7 @@
 }
 
 .box_flex {
-    display: flex;
-    flex-direction: column;
+    @include box-model;
     width: 600px;
 }
 
@@ -26,8 +39,7 @@
 }
 
 .hero_content {
-    display: flex;
-    flex-direction: column;
+    @include box-model;
     margin: 15px;
     line-height: 5em;
     color: $color_1;
@@ -64,17 +76,9 @@
 }
 
 .start_date {
-    border: solid 1px grey;
-    max-width: 17vw;
-    height: 7vh;
-    background-color: $background-color_6;
-    padding: 1em;
+    @include date-style;
 }
 
 .end_date {
-    border: solid 1px grey;
-    max-width: 17vw;
-    height: 7vh;
-    background-color: $background-color_6;
-    padding: 1em;
+    @include date-style;
 }
