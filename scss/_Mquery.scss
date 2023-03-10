@@ -144,8 +144,7 @@
     }
 
     .card_container {
-        display: flex;
-        flex-direction: column;
+        @include box-model;
         align-items: center;
         gap: 2em;
     }
@@ -160,8 +159,7 @@
     }
 
     .box-flex_map {
-        display: flex;
-        flex-direction: column;
+        @include box-model;
         height: 100%;
     }
 
@@ -205,8 +203,7 @@
     }
 
     .blog_content {
-        display: flex;
-        flex-direction: column;
+        @include box-model;
     }
 
     .blog_text {
@@ -249,14 +246,12 @@
     }
 
     .box-flex_footer {
-        display: flex;
-        flex-direction: column;
+        @include box-model;
         align-items: center;
     }
 
     .footer__content {
-        display: flex;
-        flex-direction: column;
+        @include box-model;
 
         div {
             padding: 0;
