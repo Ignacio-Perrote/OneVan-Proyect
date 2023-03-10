@@ -38,8 +38,7 @@
 .card {
     border-radius: 2px 2px 2px 2px;
     overflow: hidden;
-    flex-direction: column;
-    display: flex;
+    @include box-model;
     border: 1px solid rgb(219, 215, 215);
 }
 
