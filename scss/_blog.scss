@@ -11,16 +11,14 @@
 }
 
 .box-flex_blog {
-    display: flex;
-    flex-direction: column;
+    @include box-model;
     width: 100%;
 }
 
 .blog_heading {
-    display: flex;
+    @include box-model;
     gap: 15px;
     color: $color_3;
-    flex-direction: column;
     margin-top: 100px;
 
     h1 {

@@ -178,8 +178,8 @@ ul li {
 
 .box-section_header {
   width: 70%;
-  display: flex;
   margin: auto;
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
@@ -335,9 +335,9 @@ ul li {
 
 .blog_heading {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   color: white;
-  flex-direction: column;
   margin-top: 100px;
 }
 .blog_heading h1 {
