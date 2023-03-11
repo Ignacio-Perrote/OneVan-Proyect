@@ -678,6 +678,9 @@ figure img {
   .footer__content div {
     padding: 0;
   }
+  body {
+    padding-bottom: 45em;
+  }
 }
 @media screen and (min-width: 1025px) {
   .start_date {
