@@ -8,9 +8,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  position: relative;
-  padding-bottom: 20em;
-  min-height: 100vh;
 }
 
 p {
@@ -451,8 +448,6 @@ figure img {
 /*FOOTER*/
 .footer {
   margin-bottom: 20px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .footer h4 {
