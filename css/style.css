@@ -412,7 +412,7 @@ figure img {
   filter: grayscale(50%);
   transform: scale(1);
 }
-.gallery-container .gallery_img:hover .img {
+.gallery-container .gallery_img .img:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
 }
@@ -478,7 +478,13 @@ figure img {
   margin: 100px 0 0.5em;
   color: rgb(0, 0, 0);
   background-color: rgba(226, 226, 226, 0.603);
-  box-shadow: 0.5em 0.5em 1em var(--sombra-ppal), -0.5em -0.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  box-shadow: 0.5em 0.5em 1em #c9c9c9, -0.5em -0.5em 1em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+  transition: all 0.4s ease;
+}
+
+.lightbox .cerrar:hover {
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.5em 0.5em 1em #c9c9c9, inset -0.5em -0.5em 1em #ffffff;
+  transition: all 0.4s ease;
 }
 
 .lightbox .grande {
