@@ -1,4 +1,11 @@
 "use script"
+const hamburger = document.querySelector('.hamburger-icon-container')
+const nav    = document.querySelector('.nav')
+
+hamburger.addEventListener('click',()=>{
+    nav.classList.toggle('activo')
+})
+
 
 const enlaces  = document.querySelectorAll('.gallery-container .a')
 const lightbox = document.querySelector('.lightbox')

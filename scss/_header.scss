@@ -13,24 +13,31 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
     margin: 2px 0px;
-}
-
-.header__nav {
-    margin-top: 20px;
-    padding: 25px 0 0;
-}
-
-ul {
     display: flex;
     justify-content: space-between;
-    gap: 2vw;
+    align-items: center;
+}
+
+.hamburger-icon-container {
+    display: none;
+}
+
+
+.header .ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row nowrap;
+    
 
     li {
         list-style-type: none;
+        margin: 0 1.2em;
     }
 }
 
