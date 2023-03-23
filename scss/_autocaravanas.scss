@@ -93,3 +93,65 @@
     align-items: center;
     margin-top: 25px;
 }
+
+/*Living pagina*/
+
+.living {
+    width: 100%;
+    margin-top: 20px;
+
+
+.living-container {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.living-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.living-h2 h2 {
+    font-size: 5em;
+}
+
+.living-p {
+    padding-top: 15px;
+}
+.living-p p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: 400;
+    
+}
+
+.living-icons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.icons img {
+    width: 40px;
+}
+
+.icons p {
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+
+}

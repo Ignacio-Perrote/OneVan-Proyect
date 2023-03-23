@@ -13,14 +13,22 @@
     flex-direction: column;
 } 
 
-
-.onevan_image {
-    background-image: url(../img/fondocaravana.jpg);
+@mixin image_background {
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
+}
+
+.onevan_image {
+    background-image: url(../img/fondocaravana.jpg);
+    @include image_background;
+}
+
+.living_image {
+    background-image: url(../img/onevancamper.jpg);
+    @include image_background;
 }
 
 .box_container {

@@ -100,6 +100,15 @@ button {
   display: flex;
 }
 
+.living_image {
+  background-image: url(../img/onevancamper.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+}
+
 .box_container {
   width: 70%;
   margin: auto;
@@ -259,6 +268,55 @@ button {
   margin-top: 25px;
 }
 
+/*Living pagina*/
+.living {
+  width: 100%;
+  margin-top: 20px;
+}
+.living .living-container {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+}
+.living .living-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.living .living-h2 h2 {
+  font-size: 5em;
+}
+.living .living-p {
+  padding-top: 15px;
+}
+.living .living-p p {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.living .living-icons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.living .icons img {
+  width: 40px;
+}
+.living .icons p {
+  padding-left: 10px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.living .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+}
+
 /*CONTACTO*/
 .contacto {
   display: flex;
@@ -312,7 +370,7 @@ button {
 }
 .card_map iframe {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 /*BLOG*/
@@ -603,23 +661,19 @@ figure img {
     opacity: 1;
   }
   .onevan_image {
-    background-size: 100%;
     background-position: top;
     background-size: cover;
     background-attachment: scroll;
   }
-  .box_container {
-    width: 80%;
-  }
   .box_flex {
     width: 100%;
   }
-  .hero_content {
-    line-height: 3.5em;
-    margin-top: 25px;
+  .hero_content p {
+    margin-top: 0px;
+    font-size: 3.4em;
   }
   .hero_content h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .hero_content h3 {
     font-size: 1.6em;
@@ -670,21 +724,17 @@ figure img {
     width: 80%;
   }
   .box-map_container {
-    height: 700px;
     width: 80%;
   }
   .box-flex_map {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
   .card_nosotros {
     display: block;
-    height: 100%;
   }
   .map_content {
     width: 100%;
-    height: 50%;
     margin: 0px;
     padding: 20px;
   }
@@ -692,14 +742,14 @@ figure img {
     font-size: 2.5em;
   }
   .map_content p {
-    font-size: 1.4em;
-  }
-  .map_content button {
-    display: none;
+    font-size: 1.6em;
   }
   .card_map {
     width: 100%;
-    height: 50%;
+    height: 450px;
+  }
+  .card_map iframe {
+    height: 100%;
   }
   .box-blog_container {
     width: 80%;
