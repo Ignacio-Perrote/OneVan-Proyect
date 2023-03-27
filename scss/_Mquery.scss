@@ -1,7 +1,10 @@
 /*MEDIA QUERIES*/
 
 @media (max-width: 1024px) {
-    
+
+
+    /*Mquery Header*/
+
     .header .nav {
         width: 100%;
         display: none;
@@ -90,6 +93,8 @@
         opacity: 1;
     }
 
+    /*Mquery Search*/
+
     .onevan_image {
         background-position: top;
         background-size: cover;
@@ -101,7 +106,7 @@
     }
 
     .hero_content {
-        
+
         p {
             margin-top: 0px;
             font-size: 3.4em;
@@ -146,6 +151,9 @@
         border-radius: 0px 0px 4px 4px;
     }
 
+
+    /*Mquery Cards*/
+
     .box-section_header {
         width: 80%;
     }
@@ -170,6 +178,28 @@
 
     .card {
         width: 80%;
+    }
+
+    .living {
+        margin-top: 60px;
+
+        .living-icons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            width: auto;
+        }
+
+        .icons {
+            padding-bottom: 20px;
+        }
+    }
+
+
+    /*Mquery Contacto*/
+
+    .contacto {
+        height: 135vh;
     }
 
     .box-map_container {
@@ -201,11 +231,11 @@
     .card_map {
         width: 100%;
         height: 450px;
-    
+
         iframe {
-        height: 100%;
+            height: 100%;
+        }
     }
-}
 
     .box-blog_container {
         width: 80%;

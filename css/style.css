@@ -274,17 +274,21 @@ button {
   margin-top: 20px;
 }
 .living .living-container {
-  width: 70%;
   display: flex;
+  flex-direction: column;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 400px;
+  height: 50vh;
 }
 .living .living-content {
   display: flex;
   flex-direction: column;
   width: 70%;
+}
+.living .living-h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  padding-bottom: 20px;
 }
 .living .living-h2 h2 {
   font-size: 5em;
@@ -300,7 +304,8 @@ button {
 .living .living-icons {
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
+  width: 70%;
+  justify-content: space-between;
 }
 .living .icons img {
   width: 40px;
@@ -314,7 +319,6 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 50px;
 }
 
 /*CONTACTO*/
@@ -594,6 +598,7 @@ figure img {
 
 /*MEDIA QUERIES*/
 @media (max-width: 1024px) {
+  /*Mquery Header*/
   .header .nav {
     width: 100%;
     display: none;
@@ -660,6 +665,7 @@ figure img {
     transition: opacity 0.14s ease-in-out;
     opacity: 1;
   }
+  /*Mquery Search*/
   .onevan_image {
     background-position: top;
     background-size: cover;
@@ -702,6 +708,7 @@ figure img {
     max-width: 100%;
     border-radius: 0px 0px 4px 4px;
   }
+  /*Mquery Cards*/
   .box-section_header {
     width: 80%;
   }
@@ -722,6 +729,22 @@ figure img {
   }
   .card {
     width: 80%;
+  }
+  .living {
+    margin-top: 60px;
+  }
+  .living .living-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: auto;
+  }
+  .living .icons {
+    padding-bottom: 20px;
+  }
+  /*Mquery Contacto*/
+  .contacto {
+    height: 135vh;
   }
   .box-map_container {
     width: 80%;
